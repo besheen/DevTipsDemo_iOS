@@ -8,25 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		075FEB5328F5BF1400E7180A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075FEB5228F5BF1400E7180A /* AppDelegate.swift */; };
-		075FEB5528F5BF1400E7180A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075FEB5428F5BF1400E7180A /* SceneDelegate.swift */; };
-		075FEB5A28F5BF1400E7180A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075FEB5828F5BF1400E7180A /* Main.storyboard */; };
 		075FEB5C28F5BF1800E7180A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 075FEB5B28F5BF1800E7180A /* Assets.xcassets */; };
 		075FEB5F28F5BF1800E7180A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075FEB5D28F5BF1800E7180A /* LaunchScreen.storyboard */; };
 		C366B14328F6A7720019C74A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C366B14228F6A7720019C74A /* RootViewController.swift */; };
+		C366B19328F8E7450019C74A /* AdaptiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C366B19128F8E7450019C74A /* AdaptiveViewController.swift */; };
+		C366B19428F8E7450019C74A /* AdaptiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C366B19228F8E7450019C74A /* AdaptiveViewController.xib */; };
+		C3FB60FD2918FBD30094A030 /* AnimalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB60FC2918FBD30094A030 /* AnimalListViewController.swift */; };
 		F44C57371AFBCA587E66528F /* Pods_DevTipsDemo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB68BB71F644BB2BCFB65217 /* Pods_DevTipsDemo_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		075FEB4F28F5BF1400E7180A /* DevTipsDemo_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevTipsDemo_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		075FEB5228F5BF1400E7180A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		075FEB5428F5BF1400E7180A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		075FEB5928F5BF1400E7180A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		075FEB5B28F5BF1800E7180A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		075FEB5E28F5BF1800E7180A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		075FEB6028F5BF1800E7180A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5936F89CBDD45EB43DFCC082 /* Pods-DevTipsDemo_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevTipsDemo_iOS.release.xcconfig"; path = "Target Support Files/Pods-DevTipsDemo_iOS/Pods-DevTipsDemo_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		AB68BB71F644BB2BCFB65217 /* Pods_DevTipsDemo_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevTipsDemo_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C366B14228F6A7720019C74A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		C366B19128F8E7450019C74A /* AdaptiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveViewController.swift; sourceTree = "<group>"; };
+		C366B19228F8E7450019C74A /* AdaptiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdaptiveViewController.xib; sourceTree = "<group>"; };
+		C3FB60FC2918FBD30094A030 /* AnimalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListViewController.swift; sourceTree = "<group>"; };
 		E7E29F021E40A2F9AFF140D2 /* Pods-DevTipsDemo_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevTipsDemo_iOS.debug.xcconfig"; path = "Target Support Files/Pods-DevTipsDemo_iOS/Pods-DevTipsDemo_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,10 +65,10 @@
 		075FEB5128F5BF1400E7180A /* DevTipsDemo_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C3FB60FB2918FB510094A030 /* IndexedTable */,
+				C366B14428F6C3C70019C74A /* AdaptiveUI */,
 				075FEB5228F5BF1400E7180A /* AppDelegate.swift */,
-				075FEB5428F5BF1400E7180A /* SceneDelegate.swift */,
 				C366B14228F6A7720019C74A /* RootViewController.swift */,
-				075FEB5828F5BF1400E7180A /* Main.storyboard */,
 				075FEB5B28F5BF1800E7180A /* Assets.xcassets */,
 				075FEB5D28F5BF1800E7180A /* LaunchScreen.storyboard */,
 				075FEB6028F5BF1800E7180A /* Info.plist */,
@@ -89,6 +91,23 @@
 				AB68BB71F644BB2BCFB65217 /* Pods_DevTipsDemo_iOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C366B14428F6C3C70019C74A /* AdaptiveUI */ = {
+			isa = PBXGroup;
+			children = (
+				C366B19128F8E7450019C74A /* AdaptiveViewController.swift */,
+				C366B19228F8E7450019C74A /* AdaptiveViewController.xib */,
+			);
+			path = AdaptiveUI;
+			sourceTree = "<group>";
+		};
+		C3FB60FB2918FB510094A030 /* IndexedTable */ = {
+			isa = PBXGroup;
+			children = (
+				C3FB60FC2918FBD30094A030 /* AnimalListViewController.swift */,
+			);
+			path = IndexedTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +169,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C366B19428F8E7450019C74A /* AdaptiveViewController.xib in Resources */,
 				075FEB5F28F5BF1800E7180A /* LaunchScreen.storyboard in Resources */,
 				075FEB5C28F5BF1800E7180A /* Assets.xcassets in Resources */,
-				075FEB5A28F5BF1400E7180A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,23 +224,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C366B19328F8E7450019C74A /* AdaptiveViewController.swift in Sources */,
 				075FEB5328F5BF1400E7180A /* AppDelegate.swift in Sources */,
+				C3FB60FD2918FBD30094A030 /* AnimalListViewController.swift in Sources */,
 				C366B14328F6A7720019C74A /* RootViewController.swift in Sources */,
-				075FEB5528F5BF1400E7180A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		075FEB5828F5BF1400E7180A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				075FEB5928F5BF1400E7180A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		075FEB5D28F5BF1800E7180A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -358,6 +370,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92JP75ZK7N;
 				INFOPLIST_FILE = DevTipsDemo_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -365,7 +378,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beika.DevTipsDemo-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -378,6 +391,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92JP75ZK7N;
 				INFOPLIST_FILE = DevTipsDemo_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,7 +399,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beika.DevTipsDemo-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdaptiveViewController" customModule="DevTipsDemo_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tshirt" translatesAutoresizingMaskIntoConstraints="NO" id="HjU-cx-8hT">
+                    <rect key="frame" x="0.0" y="44" width="414" height="478.5"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKl-Em-GQg">
+                    <rect key="frame" x="0.0" y="522.5" width="414" height="277"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PSD T-Shirt Mockup Template" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="DdM-9w-6gy">
+                            <rect key="frame" x="15" y="15" width="384" height="34.5"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="35"/>
+                            </variation>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ByA-t9-Y53">
+                            <rect key="frame" x="15" y="57.5" width="384" height="129"/>
+                            <string key="text">This is a free psd T-shirt mockup provided by pixeden.com. The PSD comes with a plain simple tee-shirt mockup template. You can edit the t-shirt color and use the smart layer to apply your designs. The high-resolution makes it easy to frame specific details with close-ups.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="ByA-t9-Y53" firstAttribute="top" secondItem="DdM-9w-6gy" secondAttribute="bottom" constant="8" id="7vk-qL-7bh"/>
+                        <constraint firstAttribute="trailing" secondItem="ByA-t9-Y53" secondAttribute="trailing" constant="15" id="AsF-Uu-Gn9"/>
+                        <constraint firstAttribute="trailing" secondItem="DdM-9w-6gy" secondAttribute="trailing" constant="15" id="BEH-Ay-VN1"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ByA-t9-Y53" secondAttribute="bottom" constant="15" id="F6r-3M-7tm"/>
+                        <constraint firstAttribute="height" constant="277" id="KiH-hc-Xkv"/>
+                        <constraint firstItem="DdM-9w-6gy" firstAttribute="top" secondItem="EKl-Em-GQg" secondAttribute="top" constant="15" id="RLX-Zg-d9q"/>
+                        <constraint firstItem="DdM-9w-6gy" firstAttribute="leading" secondItem="EKl-Em-GQg" secondAttribute="leading" constant="15" id="U8W-KY-hhJ"/>
+                        <constraint firstItem="ByA-t9-Y53" firstAttribute="leading" secondItem="EKl-Em-GQg" secondAttribute="leading" constant="15" id="Zka-ic-bv3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="HjU-cx-8hT" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.585" id="6qb-Ka-XV6"/>
+                <constraint firstItem="EKl-Em-GQg" firstAttribute="top" secondItem="HjU-cx-8hT" secondAttribute="bottom" id="7VC-xf-836"/>
+                <constraint firstItem="HjU-cx-8hT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="IrF-e4-kTC"/>
+                <constraint firstItem="HjU-cx-8hT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="h0a-Dh-rM3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EKl-Em-GQg" secondAttribute="trailing" id="icK-SN-tXZ"/>
+                <constraint firstItem="EKl-Em-GQg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="s5z-BS-ImM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HjU-cx-8hT" secondAttribute="trailing" id="tji-qE-XfP"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tshirt" width="512" height="432.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
