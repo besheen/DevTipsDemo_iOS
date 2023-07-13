@@ -9,8 +9,10 @@ import UIKit
 import SnapKit
 
 class RootViewController: UIViewController {
-    let dataSource = [["title": "自适应UI（Adaptive UI）", "class": NSStringFromClass(AdaptiveViewController.self)],
-                      ["title": "索引列表", "class": NSStringFromClass(AnimalListViewController.self)]]
+    let dataSource = [["title": "Adaptive UI", "class": NSStringFromClass(AdaptiveViewController.self)],
+                      ["title": "Index Table", "class": NSStringFromClass(AnimalListViewController.self)],
+                      ["title": "Cell Animation", "class": NSStringFromClass(ArticleListViewController.self)],
+                      ["title": "MapKit Direction", "class": NSStringFromClass(RestaurantListViewController.self)]]
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
         tableView.rowHeight = 54.0
@@ -30,6 +32,8 @@ class RootViewController: UIViewController {
             make.edges.equalToSuperview()
         }
     }
+    
+    let revealViewController = SWRevealViewController(rearViewController: UIViewController(), frontViewController: UIViewController())
 }
 
 extension RootViewController: UITableViewDataSource, UITableViewDelegate {

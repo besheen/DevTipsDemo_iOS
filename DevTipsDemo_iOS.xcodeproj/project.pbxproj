@@ -14,6 +14,11 @@
 		C366B19328F8E7450019C74A /* AdaptiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C366B19128F8E7450019C74A /* AdaptiveViewController.swift */; };
 		C366B19428F8E7450019C74A /* AdaptiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C366B19228F8E7450019C74A /* AdaptiveViewController.xib */; };
 		C3FB60FD2918FBD30094A030 /* AnimalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB60FC2918FBD30094A030 /* AnimalListViewController.swift */; };
+		C3FB6108291A3DC60094A030 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB6107291A3DC50094A030 /* ArticleListViewController.swift */; };
+		C3FB610A291A3EE90094A030 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB6109291A3EE90094A030 /* ArticleTableViewCell.swift */; };
+		C3FB610D291A5D5E0094A030 /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB610C291A5D5E0094A030 /* RestaurantListViewController.swift */; };
+		C3FB610F291A5D900094A030 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB610E291A5D900094A030 /* Restaurant.swift */; };
+		C3FB6127291CDEC40094A030 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FB6125291CDEC40094A030 /* SWRevealViewController.m */; };
 		F44C57371AFBCA587E66528F /* Pods_DevTipsDemo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB68BB71F644BB2BCFB65217 /* Pods_DevTipsDemo_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +34,13 @@
 		C366B19128F8E7450019C74A /* AdaptiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveViewController.swift; sourceTree = "<group>"; };
 		C366B19228F8E7450019C74A /* AdaptiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdaptiveViewController.xib; sourceTree = "<group>"; };
 		C3FB60FC2918FBD30094A030 /* AnimalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListViewController.swift; sourceTree = "<group>"; };
+		C3FB6107291A3DC50094A030 /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
+		C3FB6109291A3EE90094A030 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		C3FB610C291A5D5E0094A030 /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
+		C3FB610E291A5D900094A030 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		C3FB6124291CDEC40094A030 /* DevTipsDemo_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DevTipsDemo_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		C3FB6125291CDEC40094A030 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		C3FB6126291CDEC40094A030 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		E7E29F021E40A2F9AFF140D2 /* Pods-DevTipsDemo_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevTipsDemo_iOS.debug.xcconfig"; path = "Target Support Files/Pods-DevTipsDemo_iOS/Pods-DevTipsDemo_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,13 +77,16 @@
 		075FEB5128F5BF1400E7180A /* DevTipsDemo_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C3FB6123291CDE6F0094A030 /* SidebarMenu */,
+				C3FB610B291A5D330094A030 /* MapKitDirection */,
+				C3FB6106291A3D2F0094A030 /* CellAnimation */,
 				C3FB60FB2918FB510094A030 /* IndexedTable */,
 				C366B14428F6C3C70019C74A /* AdaptiveUI */,
+				075FEB6028F5BF1800E7180A /* Info.plist */,
 				075FEB5228F5BF1400E7180A /* AppDelegate.swift */,
 				C366B14228F6A7720019C74A /* RootViewController.swift */,
 				075FEB5B28F5BF1800E7180A /* Assets.xcassets */,
 				075FEB5D28F5BF1800E7180A /* LaunchScreen.storyboard */,
-				075FEB6028F5BF1800E7180A /* Info.plist */,
 			);
 			path = DevTipsDemo_iOS;
 			sourceTree = "<group>";
@@ -110,6 +125,34 @@
 			path = IndexedTable;
 			sourceTree = "<group>";
 		};
+		C3FB6106291A3D2F0094A030 /* CellAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C3FB6107291A3DC50094A030 /* ArticleListViewController.swift */,
+				C3FB6109291A3EE90094A030 /* ArticleTableViewCell.swift */,
+			);
+			path = CellAnimation;
+			sourceTree = "<group>";
+		};
+		C3FB610B291A5D330094A030 /* MapKitDirection */ = {
+			isa = PBXGroup;
+			children = (
+				C3FB610C291A5D5E0094A030 /* RestaurantListViewController.swift */,
+				C3FB610E291A5D900094A030 /* Restaurant.swift */,
+			);
+			path = MapKitDirection;
+			sourceTree = "<group>";
+		};
+		C3FB6123291CDE6F0094A030 /* SidebarMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C3FB6126291CDEC40094A030 /* SWRevealViewController.h */,
+				C3FB6125291CDEC40094A030 /* SWRevealViewController.m */,
+				C3FB6124291CDEC40094A030 /* DevTipsDemo_iOS-Bridging-Header.h */,
+			);
+			path = SidebarMenu;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +186,7 @@
 				TargetAttributes = {
 					075FEB4E28F5BF1400E7180A = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -226,7 +270,12 @@
 			files = (
 				C366B19328F8E7450019C74A /* AdaptiveViewController.swift in Sources */,
 				075FEB5328F5BF1400E7180A /* AppDelegate.swift in Sources */,
+				C3FB6108291A3DC60094A030 /* ArticleListViewController.swift in Sources */,
+				C3FB610D291A5D5E0094A030 /* RestaurantListViewController.swift in Sources */,
+				C3FB610F291A5D900094A030 /* Restaurant.swift in Sources */,
+				C3FB6127291CDEC40094A030 /* SWRevealViewController.m in Sources */,
 				C3FB60FD2918FBD30094A030 /* AnimalListViewController.swift in Sources */,
+				C3FB610A291A3EE90094A030 /* ArticleTableViewCell.swift in Sources */,
 				C366B14328F6A7720019C74A /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92JP75ZK7N;
 				INFOPLIST_FILE = DevTipsDemo_iOS/Info.plist;
@@ -377,6 +427,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beika.DevTipsDemo-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DevTipsDemo_iOS/SidebarMenu/DevTipsDemo_iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -388,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92JP75ZK7N;
 				INFOPLIST_FILE = DevTipsDemo_iOS/Info.plist;
@@ -398,6 +451,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beika.DevTipsDemo-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DevTipsDemo_iOS/SidebarMenu/DevTipsDemo_iOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
